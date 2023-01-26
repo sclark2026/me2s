@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Now Laugh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&family=Catamaran:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSSCounters.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <style>
+
+    body{
+      width: 100%;
+      background-color: #292623;
+    }
+
+    nav.og{
+      width: 100%;
+      background-color: #292623;
+      height: 70px;
+      margin-top: 0;
+      padding: 5px;
+      position: fixed;
+      top:0;
+      left:0;
+      background-image: var(--bs-gradient);
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    nav.no{
+      display: none;
+    }
+
+    .container{
+      width: 100%;
+      padding-top: 80px;
+      padding-bottom: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    table {
+      width: 100%;
+      background-color: #413c37;
+    }
+
+    th{
+      float: left;
+    }
+
+    #comment {
+      float: right;
+    }
+    #comment1 {
+      float: right;
+    }
+    #comment2 {
+      float: right;
+    }
+    #comment3 {
+      float: right;
+    }
+    #comment4 {
+      float: right;
+    }
+    #comment5 {
+      float: right;
+    }
+
+    #post{
+      max-width: 75%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #524d48;
+    }
+
+    #post1{
+      max-width: 75%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #524d48;
+    }
+
+    #post2{
+      max-width: 75%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #524d48;
+    }
+
+    #post3{
+      max-width: 75%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #524d48;
+    }
+
+    #post4{
+      max-width: 75%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #524d48;
+    }
+
+    #post5{
+      max-width: 75%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #524d48;
+    }
+
+    h1{
+      font-family: 'Catamaran', sans-serif;
+      color: #FFC791;
+    }
+    
+    p{
+      font-family: 'Albert Sans', sans-serif;
+      color: #FAEBDC;
+      margin: 20px;
+      margin-left: 50px;
+    }
+
+    img{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    a {
+      font-family: 'Albert Sans', sans-serif;
+      font-size: larger;
+      color: #FAEBDC;
+      margin-top: 15px;
+      margin-right: 40px;
+      margin-left: 40px;
+      text-decoration: none;
+    }   
+
+    a:hover{
+      color: #FAEBDC;
+      text-shadow: 0px 0px 3px #FFC791;
+    }
+
+    .button {
+      border-radius: 50%;
+      border: none;
+      color: #292623;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: #524d48; 
+      color: #FAEBDC;
+    }
+
+    .button1:hover {
+    background-color: #292623;
+      color: #FFC791;
+    }
+
+    .button1:active {
+      background-color: #292623;
+      box-shadow: 0 5px rgb(0, 0, 0);
+      transform: translateY(4px);
+    }
+    .button2 {
+      background-color: #524d48; 
+      color: #FAEBDC;
+    }
+
+    .button2:hover {
+      background-color: #292623;
+      color: #219cbe;
+    }
+
+    .button2:active {
+      background-color: #292623;
+      box-shadow: 0 5px rgb(0, 0, 0);
+      transform: translateY(4px);
+    }
+
+    .button3 {
+      font-family: 'Albert Sans', sans-serif;
+      color: #FAEBDC;
+      background-color: #524d48;
+      border: 0;
+      border-radius: 4px;
+      margin: 5px;
+    }    
+    
+    .button3:hover {
+      background-color: #292623;
+      color: #FFC791;
+    }
+
+    .button3:active {
+      background-color: #292623;
+      box-shadow: 0 5px rgb(0, 0, 0);
+      transform: translateY(4px);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        nav.no{
+            display: none;
+        }
+        #post{
+            width: 90%;
+        }
+        #post1{
+            width: 90%;
+        }
+        #post2{
+            width: 90%;
+        }
+        #post3{
+            width: 90%;
+        }
+        #post4{
+            width: 90%;
+        }
+        #post5{
+            width: 90%;
+        }
+        a {
+          margin-top: 15px;
+          margin-right: 40px;
+          margin-left: 40px;
+          text-decoration: none;
+        }   
+    }
+    @media screen and (max-width: 767px){
+        nav.og{
+            display: none;
+        }
+        nav.no{
+            display: block;
+            width: 100%;
+            background-color: #292623;
+            height: 70px;
+            margin-top: 0;
+            padding: 20px;
+            position: fixed;
+            top:0;
+            left:0;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-image: var(--bs-gradient);
+            box-shadow: 0px 5px 5px 0px rgba(203, 198, 198, 0.2);
+        }
+        a {
+          margin-top: 5px;
+          margin-right: 30px;
+          margin-left: 30px;
+          text-decoration: none;
+        }   
+        #post{
+            width: 95%;
+        }
+        #post1{
+            width: 95%;
+        }
+        #post2{
+            width: 95%;
+        }
+        #post3{
+            width: 95%;
+        }
+        #post4{
+            width: 95%;
+        }
+        #post5{
+            width: 95%;
+        }
+    }
+
+    @media screen and (min-width: 5000px){
+      nav.og{
+          display: none;
+      }
+
+    }
+      
+    #Aresult{
+      color: #FAEBDC;
+      margin: 2px;
+      margin-top: 4px;
+    }
+    #Bresult{
+      color: #FAEBDC;
+      margin: 2px;
+      margin-top: 4px;
+    }
+    #Cresult{
+      color: #FAEBDC;
+      margin: 2px;
+      margin-top: 4px;
+    }
+    #Dresult{
+      color: #FAEBDC;
+      margin: 2px;
+      margin-top: 4px;
+    }
+    #Eresult{
+      color: #FAEBDC;
+      margin: 2px;
+      margin-top: 4px;
+    }
+    #Fresult{
+      color: #FAEBDC;
+      margin: 2px;
+      margin-top: 4px;
+    }
+
+  </style>
+
+  <script>
+    function upvoteCounterA() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Aresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Aresult").innerHTML = "0";
+      }
+    }
+  </script>
+  <script>
+    function downvoteCounterA() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)-1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Aresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Aresult").innerHTML = "0";
+      }
+    }
+  </script>
+
+  <script>
+    function upvoteCounterB() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Bresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Bresult").innerHTML = "0";
+      }
+    }
+  </script>
+  <script>
+    function downvoteCounterB() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)-1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Bresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Bresult").innerHTML = "0";
+      }
+    }
+  </script>
+
+  <script>
+    function upvoteCounterC() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Cresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Cresult").innerHTML = "0";
+      }
+    }
+  </script>
+  <script>
+    function downvoteCounterC() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)-1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Cresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Cresult").innerHTML = "0";
+      }
+    }
+  </script>
+
+  <script>
+    function upvoteCounterD() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Dresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Dresult").innerHTML = "0";
+      }
+    }
+  </script>
+  <script>
+    function downvoteCounterD() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)-1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Dresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Dresult").innerHTML = "0";
+      }
+    }
+</script>
+
+  <script>
+    function upvoteCounterE() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Eresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Eresult").innerHTML = "0";
+      }
+    }
+  </script>
+  <script>
+    function downvoteCounterE() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)-1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Eresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Eresult").innerHTML = "0";
+      }
+    }
+  </script>
+
+  <script>
+    function upvoteCounterF() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Fresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Fresult").innerHTML = "0";
+      }
+    }
+  </script>
+  <script>
+    function downvoteCounterF() {
+      if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)-1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("Fresult").innerHTML = localStorage.clickcount;
+      } else {
+        document.getElementById("Fresult").innerHTML = "0";
+      }
+    }
+  </script>
+</head>
+
+<body class="container-fluid">
+    <nav class="og">
+      <h1 style="float: left; padding: 15px">ME2S</h1>
+      <a style="float: right;" href="family.html">Family</a>
+      <a style="float: right;" href="index.html">Art</a>
+      <a style="float: right;" href="school.html">School</a>
+    </nav>
+
+    <nav class="no">
+      <h1 style="float: left">ME2S</h1>
+      <a style="float: right;" href="socials.html">Socials</a>
+      <a style="float: right;" href="art.html">Art</a>
+      <a style="float: right;" href="index.html">School</a>
+    </nav>
+    
+    <div class="container">
+
+      <div id="post">
+        <p>yikes that's a big spill......</p>
+        <img class="img-fluid" src="school1.jpeg" alt="wet floor sign next to models of H2O molecules">
+        <table>
+          <tr>
+            <th>
+              <button class="button button1" onclick="upvoteCounterA()" type="button">&#8593;</button>
+            </th>
+            <th>
+              <div id="Aresult"></div>
+            </th>
+            <th>
+              <button class="button button2" onclick="downvoteCounterA()" type="button">&#8595;</button>
+            </th>         
+            <th id="comment">
+              <button class="button button3">Comment</button>
+            </th>
+          </tr>
+        </table>
+      </div>
+
+      <div id="post1">
+        <p>what's even worse is if you wake up extra early to study and end up doing nothing productive HAHAHAHA</p>
+        <img class="img-fluid" src="school2.jpeg" alt="person smiling at their reflection while regretting their life choices">
+        <table>
+          <tr>
+            <th>
+              <button class="button button1" onclick="upvoteCounterB()" type="button">&#8593;</button>
+            </th>
+            <th>
+              <div id="Bresult"></div>
+            </th>
+            <th>
+              <button class="button button2" onclick="downvoteCounterB()" type="button">&#8595;</button>
+            </th>         
+            <th id="comment1">
+              <button class="button button3">Comment</button>
+            </th>
+          </tr>
+        </table>
+      </div>
+
+      <div id="post2">
+        <p>just like me during frfr</p>
+        <img class="img-fluid" src="school3.jpg" alt="first panel is joker walking with the caption me walking into class having studied for the test. second panel is joker getting run over with the caption that part that i thought wasnt important">
+        <table>
+          <tr>
+            <th>
+              <button class="button button1" onclick="upvoteCounterC()" type="button">&#8593;</button>
+            </th>
+            <th>
+              <div id="Cresult"></div>
+            </th>
+            <th>
+              <button class="button button2" onclick="downvoteCounterC()" type="button">&#8595;</button>
+            </th>            
+            <th id="comment2">
+              <button class="button button3">Comment</button>
+            </th>
+          </tr>
+        </table>
+      </div>          
+      
+      <div id="post3">
+        <p>moral support!!!</p>
+        <img class="img-fluid" src="school4.jpg" alt="list of alarms with progressively more demeaning threats as their names">
+        <table>
+          <tr>
+            <th>
+              <button class="button button1" onclick="upvoteCounterD()" type="button">&#8593;</button>
+            </th>
+            <th>
+              <div id="Dresult"></div>
+            </th>
+            <th>
+              <button class="button button2" onclick="downvoteCounterD()" type="button">&#8595;</button>
+            </th>
+            <th id="comment3">
+              <button class="button button3">Comment</button>
+            </th>
+          </tr>
+        </table>
+      </div>          
+      
+      <div id="post4">
+        <p>relatable.</p>
+        <img class="img-fluid" src="school5.jpg" alt="person working on computer with their back turned. there is a note taped to their back reading please dont talk to me i have no self control and will talk to you for hours and get no work done">
+        <table>
+          <tr>
+            <th>
+              <button class="button button1" onclick="upvoteCounterE()" type="button">&#8593;</button>
+            </th>
+            <th>
+              <div id="Eresult"></div>
+            </th>
+            <th>
+              <button class="button button2" onclick="downvoteCounterE()" type="button">&#8595;</button>
+            </th>
+            <th id="comment4">
+              <button class="button button3">Comment</button>
+            </th>
+          </tr>
+        </table>
+      </div>          
+      
+      <div id="post5">
+        <p>as fun as first quarter chem (and by extension, chem itself) was, i definitely felt this way towards polyatomic ions ;;;</p>
+        <img class="img-fluid" src="school6.jpg" alt="friend says hey hows your chemistry review going OP replies with i guess you could say im in my element">
+        <table>
+          <tr>
+            <th>
+              <button class="button button1" onclick="upvoteCounterF()" type="button">&#8593;</button>
+            </th>
+            <th>
+              <div id="Fresult"></div>
+            </th>
+            <th>
+              <button class="button button2" onclick="downvoteCounterF()" type="button">&#8595;</button>
+            </th>
+            <th id="comment5">
+              <button class="button button3">Comment</button>
+            </th>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+</body>
+</html>
